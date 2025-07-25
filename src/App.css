@@ -1,0 +1,123 @@
+@media(max-width:500px){
+    .guides{
+        display: none;
+    }
+    .footerSen{
+        display: none;
+    }
+}
+
+
+/* To Enlarge on hover */
+.get{
+    transition: all 0.3s ease-in-out !important;
+}
+.get:hover{
+    transform: scale(1.1);
+}
+
+
+/* Changing Bg Colour on hover */
+.bgchange{
+    transition: all 0.3s ease-in-out !important;
+}
+.bgchange:hover{
+    background-color: rgb(43, 139, 255) !important;
+    color: white !important;
+}
+
+/* Applying Shadow on hover */
+.shadow1{
+    transition: box-shadow 0.3s ease;
+}
+.shadow1:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important ;
+}
+
+
+/* Applying Rotation and Bg colour to Brand logos on hover */
+.brandLogos{
+    transition: 0.5s ease;
+    transform-style: preserve-3d;
+}
+.brandLogos:hover{
+    color: rgb(70, 89, 160) !important;
+    transform: rotateY(360deg)
+}
+
+
+/* Adjusting Button size according to screen width */
+@media (max-width: 576px) {
+  .btn-responsive-sm {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+  }
+}
+@media (max-width: 576px) {
+  .contact-btn {
+    padding: 0px !important;
+    font-size: 0.875rem !important;
+  }
+}
+
+
+/* Hover effects on the Video cards */
+.video-card-img{
+  transition: transform 0.3s ease;
+}
+
+.video-card-img:hover{
+  transform: scale(1.5);
+}
+
+.video-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.video-card:hover .overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+@media (max-width: 576px){
+  .allvds{
+    margin-left: 90px;
+  }
+}
+
+.homesec{
+  transition: all 0.3s ease-in-out;
+}
+.homesec:hover{
+  animation: bounceFlash 0.6s ease;
+  border: solid;
+
+}
+@keyframes bounceFlash {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.08); }
+  60% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
+
+.incwidth{
+  transition: all 0.3s ease-in-out !important;
+}
+.incwidth:hover{
+  width: 100% !important;
+}
