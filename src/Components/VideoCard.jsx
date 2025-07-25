@@ -95,7 +95,7 @@ function VideoCard({ displayvideoData, setdeleteVideoResponse, insideCategory })
             <Modal.Title>{displayvideoData?.caption}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <iframe style={{ borderRadius: '10px' }} width="100%" height="420" src={`${displayvideoData?.youtubeUrl}?autoplay=1`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe style={{ borderRadius: '10px' }} width="100%" height="420" src={`${displayvideoData?.youtubeUrl}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>

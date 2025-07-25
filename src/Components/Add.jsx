@@ -32,7 +32,7 @@ function Add({setaddVideoResponse}) {
     if(url.includes("v=")){
       setInvalidUrl(false)
       let videoId=url.split("v=")[1].slice(0,11)
-      setVideoDetails({...videoDetails,youtubeUrl:`https://www.youtube.com/embed/${videoId}`})
+      setVideoDetails({...videoDetails,youtubeUrl:`https://www.youtube.com/embed/${videoId}?autoplay=1`})
     }
     else{
       setVideoDetails({...videoDetails,youtubeUrl:''})
