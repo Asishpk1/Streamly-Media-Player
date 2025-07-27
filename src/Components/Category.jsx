@@ -22,7 +22,7 @@ function Category({setaddCategoryResponse,dropViewResponse}) {
   // console.log(CategoryName);
 
 
-  const handleClose = () => setShow(false); // y not setCategoryName('')
+  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   // To Store User entered category name and videos to json file [BackEnd]
@@ -47,11 +47,12 @@ function Category({setaddCategoryResponse,dropViewResponse}) {
     }
   }
 
+  // To call getAllCategory() when page [Category Componenet] is rendered and when respective data changes.
   useEffect(() => {
     getAllCategory()
   }, [dropViewResponse])
 
-
+  // To get category details from json server and storing it to state.
   const getAllCategory = async () => {
     try {
       const result = await getCategoryAPI()
@@ -67,6 +68,7 @@ function Category({setaddCategoryResponse,dropViewResponse}) {
     }
   }
 
+  // To Delete a Category
   const deleteCategory = async (category) => {
     try {
       const result = await deleteCategoryAPI(category.id)
@@ -82,11 +84,13 @@ function Category({setaddCategoryResponse,dropViewResponse}) {
     }
   }
 
+  // To drop videos from All videos to Category.
   const videoDroped = async (e, category) => {
     // console.log(category);
 
     const videoDetails = JSON.parse(e.dataTransfer.getData('video'))
 
+    // To avoid dropping same videos on a category.
     for (let eachVideo of category.videos){
       if(eachVideo.id==videoDetails.id){
         toast.error(`${videoDetails.caption} already exists in ${category.name}`)
@@ -113,6 +117,7 @@ function Category({setaddCategoryResponse,dropViewResponse}) {
     }
   }
 
+  // To drop Videos from Category to All Videos.
   const catdragStarted=async(e,categoryDetails,videoDetails)=>{
     // console.log(categoryDetails,videoDetails);
 

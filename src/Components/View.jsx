@@ -14,7 +14,7 @@ function View({addVideoResponse,addCategoryResponse,setdropViewResponse}) {
   // To Update videocard list on deletion
   const [deleteVideoResponse,setdeleteVideoResponse] = useState({})
   
-  // To call getAllVideos() when page [View Componenet] is rendered.
+  // To call getAllVideos() when page [View Componenet] is rendered and when respective data changes.
   useEffect(() => {
     getAllVideos()
   }, [addVideoResponse,deleteVideoResponse,addCategoryResponse])
@@ -35,6 +35,7 @@ function View({addVideoResponse,addCategoryResponse,setdropViewResponse}) {
     }
   }
 
+  // To drop Videos from Category to All Videos.
   const catVideoDropped=async(e)=>{
     const {categoryDetails,videoDetails}= JSON.parse(e.dataTransfer.getData('data'))
     // console.log(categoryDetails,videoDetails);

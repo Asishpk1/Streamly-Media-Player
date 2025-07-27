@@ -57,6 +57,7 @@ function VideoCard({ displayvideoData, setdeleteVideoResponse, insideCategory })
     }
   }
 
+  // To drop videos to Cateory section.
   const dragStarted = (e, videoDetails) => {
     // console.log(videoDetails);
     // console.log(e);
