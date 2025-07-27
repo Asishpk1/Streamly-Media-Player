@@ -61,7 +61,7 @@ function View({addVideoResponse,addCategoryResponse,setdropViewResponse}) {
 
   return (
     <>
-    <div onDragOver={(e)=>e.preventDefault()} onDrop={(e)=>catVideoDropped(e)}>
+    <div onDragOver={(e)=>e.preventDefault()} onDrop={(e)=>catVideoDropped(e)} className='px-3 px-sm-0'>
 
       {/* All Videos Section */}
       <h2 className='breadcrumb fs-4 w-50 allvds incwidth' style={{borderRadius:'30px'}}>&nbsp;&nbsp;ALL VIDEOS</h2>

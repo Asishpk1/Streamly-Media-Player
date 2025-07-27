@@ -122,7 +122,7 @@ function Category({setaddCategoryResponse,dropViewResponse}) {
 
   return (
     <>
-      <div>
+      <div className='p-2 p-sm-0'>
 
         {/* All Categories Section */}
         <div className='d-flex align-items-center justify-content-between' >

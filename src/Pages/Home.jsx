@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
     <Header/> <br />
-    <div className='p-5'>
+    <div className='p-sm-5 p-2'>
       <div className='d-flex justify-content-between'>
         <Add setaddVideoResponse={setaddVideoResponse} />
         <Link to={'/history'}>

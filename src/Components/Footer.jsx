@@ -22,38 +22,38 @@ function Footer() {
   return (
     <>
     <div className='breadcrumb' style={{ borderRadius:'50px'}}>
-        <div className='d-flex justify-content-around p-4' style={{borderTop:'solid', borderRadius:'50px'}}>
+        <div className='d-flex justify-content-around py-4 row' style={{borderTop:'solid', borderRadius:'50px'}}>
 
         {/* Streamly Section   */}
-        <div className='' style={{width:'35%'}}>
+        <div className='col-md-5 px-3 px-sm-0'>
            <Link className='text-decoration-none' to={'/'}>
             <i style={{fontSize:'30px', fontWeight:'600'}} className="fa-solid fa-forward"></i>
             <span className='ms-3' style={{fontSize:'30px', fontWeight:'600'}}>Streamly</span>
            </Link> <br /> <br />
-            <p style={{textAlign:'justify', marginTop:'-8px'}}>Streamly is a sleek online video player that lets you instantly watch videos by pasting a link—no downloads, no hassle. <span className='footerSen'>Stream content seamlessly and save your favorites to a personal library for easy access anytime. Streamly offers fast, organized, and effortless streaming.</span> </p>
-            <p >Code licensed by Asish</p>
-            <p >Currently v2.1.4</p>
+            <p style={{textAlign:'justify', marginTop:'-8px'}}>Streamly is a sleek online video player that lets you instantly watch videos by pasting a link. No downloads, no hassle. <span className='footerSen'>Stream content seamlessly and save your favorites to a personal library for easy access anytime. Streamly offers fast, organized, and effortless streaming.</span> </p>
+            <span >Code licensed by Asish</span> <br />
+            <span >Currently v2.1.4</span>
         </div>
 
         {/* Links Section */}
-        <div style={{width:'10%',textAlign:'center'}}>
-            <h5>Links</h5> <br />
+        <div className='col-md-1 mt-3 px-3 px-sm-0'>
+            <h5>Links</h5>
             <Link style={{textDecoration:'none'}} to={'/'}>Landing</Link> <br />
             <Link style={{textDecoration:'none'}} to={'/home'}>Home</Link> <br />
             <Link style={{textDecoration:'none'}} to={'/history'}>History</Link>
         </div>
 
         {/* Guides Section */}
-        <div style={{width:'10%'}} className='guides'>
-            <h5>Guides</h5> <br />
+        <div className='col-md-1 mt-3 px-3 px-sm-0'>
+            <h5>Guides</h5>
             <Link style={{textDecoration:'none'}} to={'/'}>React</Link> <br />
             <Link style={{textDecoration:'none'}} to={'/home'}>React Bootstrap</Link> <br />
             <Link style={{textDecoration:'none'}} to={'/history'}>React Router</Link>
         </div>
 
         {/* Contact Section */}
-        <div style={{width:'25%'}}>
-            <h5>Contact Us</h5> <br/>
+        <div className='col-md-3 mt-3 px-3'>
+            <h5>Contact Us</h5>
             <Form>
                 <Row className="align-items-center">
                     <Col xs="auto">
@@ -75,7 +75,7 @@ function Footer() {
             </Form>
 
             {/* Social Media Section */}
-            <div className='d-flex justify-content-between mt-3' style={{width:'86%'}}>
+            <div className='d-flex justify-content-between mt-3 mediaIcon' style={{width:'86%'}}>
                 <Link to={'https://www.instagram.com/human_being___/'}><i className="fa-brands fa-facebook fa-lg brandLogos" style={{color:'rgba(131, 144, 186, 1)'}}></i></Link>
                 <Link to={'https://www.instagram.com/human_being___/'}><i className="fa-brands fa-twitter fa-lg brandLogos" style={{color:'rgba(131, 144, 186, 1)'}}></i></Link>
                 <Link to={'https://www.instagram.com/human_being___/'}><i className="fa-brands fa-instagram fa-lg brandLogos" style={{color:'rgba(131, 144, 186, 1)'}}></i></Link>

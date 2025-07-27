@@ -63,7 +63,7 @@ function History() {
       </div>
 
       {/* History Table Section */}
-      <div className='p-5 ms-md-5 me-md-5' >
+      <div className='p-sm-5 p-3 ms-md-5 me-md-5' >
       {history.length>0?
               <Table responsive className='table-hover'>
         <thead>

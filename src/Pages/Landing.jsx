@@ -16,30 +16,30 @@ function Landing() {
     <>
     <Header/> <br />
 
-    <div className='p-5 mt-lg-5'>
+    <div className='p-sm-5 p-2 mt-lg-5 mt-3'>
 
       {/* Welcome Section */}
-      <div className='row w-100 ms-sm-5 '>
+      <div className='row w-100 ms-md-5 ms-1'>
       <div className='col-lg-6 d-flex justify-content-center flex-column'>
         <h1>Welcome to <span className='' style={{fontWeight:'700'}}>Streamly</span></h1>
         <h4>Streaming Just Got a Glow-Up.</h4>
         <p style={{textAlign:'justify'}}>Streamly is a sleek online video player that lets you instantly watch videos by pasting a link—no downloads, no hassle. Stream content seamlessly and save your favorites to a personal library for easy access anytime. Streamly offers fast, organized, and effortless streaming—perfect.</p>
         <Link to={'/home'}>
-        <button className='btn w-25 get btn-primary'>Get Started</button>
+        <button className='btn get btn-primary py-2 px-sm-5 py-sm-3 getStartedbtn'>Get Started</button>
         </Link>
       </div>
       <div className='col-md-6 text-center'>
-        <img className='w-50' style={{marginTop:'-70px'}} src={mainimg} alt="" />
+        <img className='w-50 diskimg' style={{marginTop:'-70px'}} src={mainimg} alt="" />
       </div>
     </div> <br /> <br />
 
     {/* Features Section */}
-    <div>
-      <h1 className='mt-lg-5 text-center fs-2'><strong>Features</strong></h1> <br />
+    <div className='p-sm-5 p-2'>
+      <h1 className='mt-lg-5 text-center fs-1'><strong>Features</strong></h1> <br />
       <div className='d-flex align-items-center justify-content-around breadcrumb p-5' style={{borderRadius:'40px'}}>
 
         {/* First card */}
-        <Card className='get shadow1 bgchange' style={{ width: '18rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px' }}>
+        <Card className='get shadow1 bgchange mb-3 mb-sm-0' style={{ width: '18rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px' }}>
       <Card.Img variant="top" src={mainimg2} />
       <Card.Body>
         <Card.Title className='text-light'>Manage videos</Card.Title>
@@ -50,7 +50,7 @@ function Landing() {
     </Card>
 
     {/* Second card */}
-    <Card className='get shadow1 bgchange' style={{ width: '18rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px'}}>
+    <Card className='get shadow1 bgchange mb-3 mb-sm-0' style={{ width: '18rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px'}}>
       <Card.Img variant="top" src={mainimg3} />
       <Card.Body>
         <Card.Title className='text-light'>Categorize videos</Card.Title>
@@ -74,7 +74,7 @@ function Landing() {
     </div> <br /> <br /> <br />
 
     {/* Description Section */}
-    <div className='row d-flex justify-content-around align-items-center p-5 breadcrumb ' style={{border:'solid', borderRadius:'30px'}}>
+    <div className='row d-flex justify-content-around align-items-center p-3 p-sm-5 breadcrumb ms-2 ms-sm-0 me-sm-0 me-2' style={{border:'solid', borderRadius:'30px'}}>
       <div className='col-lg-6'>
         <h1>Seamless and Stream-Ready</h1>
 

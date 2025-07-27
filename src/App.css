@@ -121,3 +121,17 @@
 .incwidth:hover{
   width: 100% !important;
 }
+
+@media(max-width: 576px){
+  .getStartedbtn{
+    width: 100%;
+  }
+  .mediaIcon{
+    width: 66% !important;
+  }
+  .diskimg{
+    margin-top: 1px !important;
+    margin-left: -40px;
+  }
+}
+
