@@ -46,9 +46,9 @@ function Footer() {
         {/* Guides Section */}
         <div className='col-md-1 mt-3 px-3 px-sm-0'>
             <h5>Guides</h5>
-            <Link className='text-body' style={{textDecoration:'none'}} to={'/'}>React</Link> <br />
-            <Link className='text-body' style={{textDecoration:'none'}} to={'/home'}>React Bootstrap</Link> <br />
-            <Link className='text-body' style={{textDecoration:'none'}} to={'/history'}>React Router</Link>
+            <Link className='text-body' style={{textDecoration:'none'}} to={'https://react.dev/'}>React</Link> <br />
+            <Link className='text-body' style={{textDecoration:'none'}} to={'https://react-bootstrap.github.io/'}>React Bootstrap</Link> <br />
+            <Link className='text-body' style={{textDecoration:'none'}} to={'https://www.npmjs.com/package/react-router-dom'}>React Router</Link>
         </div>
 
         {/* Contact Section */}
