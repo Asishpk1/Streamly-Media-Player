@@ -23,7 +23,7 @@ function Landing() {
       <div className='col-lg-6 d-flex justify-content-center flex-column'>
         <h1>Welcome to <span className='' style={{fontWeight:'700'}}>Streamly</span></h1>
         <h4>Streaming Just Got a Glow-Up.</h4>
-        <p style={{textAlign:'justify'}}>Streamly is a sleek online video player that lets you instantly watch videos by pasting a link—no downloads, no hassle. Stream content seamlessly and save your favorites to a personal library for easy access anytime. Streamly offers fast, organized, and effortless streaming—perfect.</p>
+        <p style={{textAlign:'justify'}}>Streamly is a sleek online video player that lets you instantly watch videos by pasting a link. No downloads, no hassle. Stream content seamlessly and save your favorites to a personal library for easy access anytime. Streamly offers fast, organized, and effortless streaming.</p>
         <Link to={'/home'}>
         <button className='btn get btn-primary py-2 px-sm-5 py-sm-3 getStartedbtn'>Get Started</button>
         </Link>
@@ -39,9 +39,9 @@ function Landing() {
       <div className='d-flex align-items-center justify-content-around breadcrumb p-5' style={{borderRadius:'40px'}}>
 
         {/* First card */}
-        <Card className='get shadow1 bgchange mb-3 mb-sm-0' style={{ width: '18rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px' }}>
+        <Card className='get shadow1 bgchange mb-3 mb-sm-0' style={{ width: '14rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px' }}>
       <Card.Img variant="top" src={mainimg2} />
-      <Card.Body>
+      <Card.Body style={{marginTop:'-25px'}}>
         <Card.Title className='text-light'>Manage videos</Card.Title>
         <Card.Text>
           Upload, view, and delete videos in just a few clicks. Simple and seamless.
@@ -50,9 +50,9 @@ function Landing() {
     </Card>
 
     {/* Second card */}
-    <Card className='get shadow1 bgchange mb-3 mb-sm-0' style={{ width: '18rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px'}}>
+    <Card className='get shadow1 bgchange mb-3 mb-sm-0' style={{ width: '14rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px'}}>
       <Card.Img variant="top" src={mainimg3} />
-      <Card.Body>
+      <Card.Body style={{marginTop:'-25px'}}>
         <Card.Title className='text-light'>Categorize videos</Card.Title>
         <Card.Text>
           Organize your library with drag-and-drop categories for quick access.
@@ -61,12 +61,12 @@ function Landing() {
     </Card>
 
     {/* Third card */}
-    <Card className='get shadow1 bgchange' style={{ width: '18rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px' }}>
+    <Card className='get shadow1 bgchange' style={{ width: '14rem', backgroundColor:'rgba(40, 53, 99, 1)', borderRadius:'20px' }}>
       <Card.Img variant="top" src={mainimg4} />
-      <Card.Body>
+      <Card.Body style={{marginTop:'-25px'}}>
         <Card.Title className='text-light'>History Control</Card.Title>
         <Card.Text>
-          View and manage your complete watch history. Revisit or clear anytime.
+          Relive your viewing journey. Manage or clear your watch history anytime.
         </Card.Text>
       </Card.Body>
     </Card>
